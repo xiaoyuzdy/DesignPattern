@@ -7,12 +7,7 @@ package FactoryPattern;
  *
  */
 public abstract class PizzaStore {
-	SimplePizzaFactory factory;
-
-	public PizzaStore(SimplePizzaFactory factory) {
-		this.factory = factory;
-	}
-
+	
 	public Pizza orderPizza(String type) {
 		Pizza pizza = createPizza(type);
 		pizza.prepare();
@@ -22,6 +17,11 @@ public abstract class PizzaStore {
 		return pizza;
 	}
 
+	/**
+	 * 相当于创建Pizza的工厂 
+	 * @param type
+	 * @return
+	 */
 	abstract Pizza createPizza(String type);
 	
 }

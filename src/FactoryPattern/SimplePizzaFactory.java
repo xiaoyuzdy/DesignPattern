@@ -1,7 +1,7 @@
 package FactoryPattern;
 
 /**
- * 简单工厂类 为客户创建Pizza类，处理创建对象的具体细节
+ * 简单工厂类， 为客户创建Pizza类，处理创建对象的具体细节
  * 
  * 
  * @author he
