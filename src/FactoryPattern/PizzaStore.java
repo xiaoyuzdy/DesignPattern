@@ -18,7 +18,7 @@ public abstract class PizzaStore {
 	}
 
 	/**
-	 * 相当于创建Pizza的工厂 
+	 * 工厂方法，相当于创建Pizza的工厂 
 	 * @param type
 	 * @return
 	 */

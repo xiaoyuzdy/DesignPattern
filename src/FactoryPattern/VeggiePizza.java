@@ -26,8 +26,7 @@ public class VeggiePizza extends Pizza {
 
 	@Override
 	void box() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("这是普通的VeggiePizza");
 	}
 
 	@Override
