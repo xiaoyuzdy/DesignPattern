@@ -51,7 +51,6 @@ public class Signleton {
 				signleton=new Signleton();
 			}
 		}
-		signleton=new Signleton();
 	}
 	return signleton;
    }
