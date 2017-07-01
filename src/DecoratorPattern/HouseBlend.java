@@ -1,5 +1,10 @@
 package DecoratorPattern;
 
+/**
+ * 具体的饮料
+ * @author he
+ *
+ */
 public class HouseBlend extends Beverage {
 
 	public HouseBlend() {
