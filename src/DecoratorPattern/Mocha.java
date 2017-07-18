@@ -10,7 +10,7 @@ public class Mocha extends CondimentDecorator {
 	Beverage beverage;//±»×°ÊÎÕß
 
 	public Mocha(Beverage beverage) {
-		this.beverage = beverage;
+		this.beverage = beverage;  
 	}
 
 	@Override
