@@ -14,4 +14,10 @@ public class SterenOffWithCDCommand implements Command {
 
 	}
 
+	@Override
+	public void undo() {
+		sterro.on();
+		
+	}
+
 }

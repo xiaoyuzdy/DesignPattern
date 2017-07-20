@@ -6,5 +6,13 @@ package CommandPattern;
  *
  */
 public interface Command {
+	/**
+	 * Ö´ÐÐ
+	 */
 	public void execute();
+	
+	/**
+	 * ³·Ïú
+	 */
+	public void undo();
 }
