@@ -13,7 +13,8 @@ public class DinerMenu {
 
 	public DinerMenu() {
 		menuItems = new MenuItem[MAX_ITEMS];
-
+		addItem(" DinerMenu Vegetarian", "Vegetarian description", true, 2.99);
+		addItem("DinerMenu BLT", "BLT description", true, 3.99);
 	}
 
 	public void addItem(String name, String description, boolean vegetarian, double price) {
