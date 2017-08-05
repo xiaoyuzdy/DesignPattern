@@ -59,4 +59,9 @@ public class Menu extends MenuComponent {
 		return "Menu [name=" + name + ", description=" + description + "]";
 	}
 
+	@Override
+	Iterator createIterator() {
+		return new CompositeIterator(mComponents.iterator());
+	}
+
 }
