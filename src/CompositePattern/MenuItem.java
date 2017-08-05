@@ -1,5 +1,7 @@
 package CompositePattern;
 
+import java.util.Iterator;
+
 /**
  * р╤вс╫з╣Ц
  * 
@@ -44,6 +46,11 @@ public class MenuItem extends MenuComponent {
 	public String toString() {
 		return "MenuItem [name=" + name + ", description=" + description + ", vegetarian=" + vegetarian + ", price="
 				+ price + "]";
+	}
+
+	@Override
+	Iterator createIterator() {
+		return new NullIterator();
 	}
 
 }
