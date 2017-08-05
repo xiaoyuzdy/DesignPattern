@@ -21,7 +21,8 @@ public class MenuTestDrive {
 		pancakeHouseMenu.add(new MenuItem("PancakeHouseMenu Waffles", "Waffles description", true, 4.99));
 
 		Waitress waitress = new Waitress(allMenus);
-		waitress.printMenu();
+//		waitress.printMenu();
+		waitress.printVegetarianMenu();
 
 	}
 }
