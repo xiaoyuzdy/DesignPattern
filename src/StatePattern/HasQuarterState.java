@@ -17,25 +17,24 @@ public class HasQuarterState implements State {
 	
 	@Override
 	public void insertQuarter() {
-		// TODO Auto-generated method stub
-
+		System.out.println(" you can't insert another quarter");
 	}
 
 	@Override
 	public void ejectQuarter() {
-		// TODO Auto-generated method stub
-
+		System.out.println("Quarter returned");
+		gumballMachine.setState(gumballMachine.getNoQuarterState());
 	}
 
 	@Override
 	public void turnCrank() {
-		// TODO Auto-generated method stub
-
+		System.out.println("you turned...");
+		gumballMachine.setState(gumballMachine.getSoldOutState());
 	}
 
 	@Override
 	public void dispense() {
-		// TODO Auto-generated method stub
+		System.out.println("No gumball dispensed");
 
 	}
 
