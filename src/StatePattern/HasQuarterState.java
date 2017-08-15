@@ -1,5 +1,7 @@
 package StatePattern;
 
+import java.util.Random;
+
 /**
  * 可以售卖的状态
  * 
@@ -8,13 +10,13 @@ package StatePattern;
  */
 public class HasQuarterState implements State {
 
-	
+	Random randomWinner = new Random(System.currentTimeMillis());
 	GumballMachine gumballMachine;
 
 	public HasQuarterState(GumballMachine gumballMachine) {
 		this.gumballMachine = gumballMachine;
 	}
-	
+
 	@Override
 	public void insertQuarter() {
 		System.out.println(" you can't insert another quarter");
@@ -29,7 +31,13 @@ public class HasQuarterState implements State {
 	@Override
 	public void turnCrank() {
 		System.out.println("you turned...");
-		gumballMachine.setState(gumballMachine.getSoldOutState());
+		int winner = randomWinner.nextInt(10);
+		if (winner == 0 && gumballMachine.getCount() > 1) {
+			gumballMachine.setState(gumballMachine.getWinnerState());
+		} else {
+			gumballMachine.setState(gumballMachine.getSoldOutState());
+		}
+
 	}
 
 	@Override

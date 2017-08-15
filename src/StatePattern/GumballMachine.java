@@ -21,6 +21,7 @@ public class GumballMachine {
 		noQuarterState = new NoQuarterState(this);
 		hasQuarterState = new HasQuarterState(this);
 		soldState = new SoldState(this);
+		winnerState=new WinnerState(this);
 
 		this.count = numberGumballs;
 		// 商品数量超过0
@@ -77,6 +78,13 @@ public class GumballMachine {
 	
 	public int getCount(){
 		return count;
+	}
+
+	@Override
+	public String toString() {
+		return "GumballMachine [soldOutState=" + soldOutState + ", noQuarterState=" + noQuarterState
+				+ ", hasQuarterState=" + hasQuarterState + ", soldState=" + soldState + ", winnerState=" + winnerState
+				+ ", state=" + state + ", count=" + count + "]";
 	}
 	
 	
